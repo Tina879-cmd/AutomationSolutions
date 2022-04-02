@@ -72,7 +72,7 @@ public class HomePages extends WebDriverWrapper {
     public void hotelList() throws IOException {
 
         CSVWriter write = new CSVWriter(new FileWriter(
-                "C://Users//Tina_Patil//Documents//AutomationSolution//src//testData/sample2.csv"), '|',
+                System.getProperty("user.dir") + "/src/testData/sample2.csv"), '|',
                 CSVWriter.NO_QUOTE_CHARACTER,
                 CSVWriter.DEFAULT_ESCAPE_CHARACTER,
                 CSVWriter.DEFAULT_LINE_END);
